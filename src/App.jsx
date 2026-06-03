@@ -322,9 +322,9 @@ export default function RealEstatePotentialPro(){
               <FileDown className="h-4 w-4" /> Export
             </button>
 
-            <div className="flex items-center gap-1 border border-gray-300 rounded-md px-2 py-1 text-sm">
-              <Palette className="h-4 w-4 text-gray-500" />
-              <select className="outline-none bg-transparent" value={theme} onChange={e=>setTheme(e.target.value)}>
+            <div className="flex items-center gap-1 border border-transparent rounded-md px-2 py-1 text-sm">
+              <Palette className="h-4 w-4 text-gray-300" />
+              <select className="outline-none bg-transparent text-white border-none appearance-none" value={theme} onChange={e=>setTheme(e.target.value)}>
                 <option value="emerald">Emerald</option>
                 <option value="ocean">Ocean</option>
                 <option value="sunset">Sunset</option>
