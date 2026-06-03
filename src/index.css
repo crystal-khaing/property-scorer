@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: make sure your body fills the screen nicely */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+/* Dark mode slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff var(--slider-value, 0%),
+    #555 var(--slider-value, 0%),
+    #555 100%
+  ); /* white filled, gray unfilled */
+  outline: none;
+  cursor: pointer;
+}
+
+/* Webkit thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Firefox thumb */
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+/* Firefox track */
+input[type="range"]::-moz-range-track {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff var(--slider-value, 0%),
+    #555 var(--slider-value, 0%),
+    #555 100%
+  );
+}
+/* Input fields default styling */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  background-color: #000000; /* dark background */
+  color: white; /* white text */
+  border: 1px solid #555; /* subtle border */
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  outline: none; /* remove default outline */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* White outline on focus */
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  border-color: white; /* border becomes white */
+  box-shadow: 0 0 0 2px white; /* subtle white glow */
+}
+
