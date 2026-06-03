@@ -3,7 +3,7 @@
 A web app that evaluates the investment potential of any property using a transparent, data-driven 1–100 scoring system. Built during a real estate tech internship in 2025.
 
 ## Live Demo
-<!-- Add your GitHub Pages or deployment link here once deployed -->
+https://crystal-khaing.github.io/property-scorer
 
 ## What it does
 
